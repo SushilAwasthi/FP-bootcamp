@@ -61,19 +61,22 @@
         </div>
         <h1 style="text-align: center;">Contact Us</h1>
         <div class="boxe">
-        <form id="form" onsubmit="return validate()">
-        <label for="name">Name:</label><br>
-        <input type="text" placeholder="full name" id="username" name="name"><br>
-        <label for="email">EmailAddress:</label><br>
-        <input type="email" placeholder="abc@gmail.com" id="email" name="email"><br>
-        <label for="Contact">Contact:</label><br>
-        <input type="number" placeholder="write your phone number" id="phone" name="phone"><br>
-           
-            <label for="password">Password:</label><br>
-           <input type="text" placeholder="" id="pwd" name="pwd"><br>
-           
-           <p><input type="submit" value="submit"></p>
-    </form></div>
+        <form id="form" onsubmit="return validate()" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <span id="username-error" style="color: red;"></span><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <span id="email-error" style="color: red;"></span><br><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone">
+    <span id="phone-error" style="color: red;"></span><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+</div>
     <footer style="background-color: black;">
         <div class="footer-content">
             <div class="foot"> 

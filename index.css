@@ -126,3 +126,6 @@ textarea{
   height: 100px;
   width: 500px;
 }
+.error-border {
+  border: 2px solid red;
+}

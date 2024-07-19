@@ -1,36 +1,30 @@
-function validate(){
+function validate() {
+    // Clear previous error messages
+    document.getElementById('username-error').textContent = "";
+    document.getElementById('email-error').textContent = "";
+    document.getElementById('phone-error').textContent = "";
 
-        const  username = document.getElementById('username').value;
-        const  email= document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const pwd= document.getElementById('pwd').value;
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
 
-            
-            if(username == ""){
-               
-            }else if(username.length <= 2){
-                    alert('atleast three character username');
-                
-            }else if(email == ""){
-                alert('email must be filled');
-            }else if(phone == ""){
-                alert('phone no must be filled');
-            }
-            else if(phone.length < 10){
-                alert("phone no should be 10 character");
-            }
-            else if(pwd==""){
-                alert("Please enter password");
-            }
-            else if(pwd.length < 5){
-                alert("Password must be of 5 character");
-            }
-            else{
-                alert(
-                    JSON.stringify({name:username,
-                      email:email,
-                      phone:phone}))
-            }
-            return false;
-}     
+    let isValid = true;
 
+    if (username === "") {
+        document.getElementById('username-error').textContent = 'Username cannot be blank';
+        isValid = false;
+    } 
+    if (email === "") {
+        document.getElementById('email-error').textContent = 'Email must be filled';
+        isValid = false;
+    } 
+    if (phone === "") {
+        document.getElementById('phone-error').textContent = 'Phone number must be filled';
+        isValid = false;
+    } 
+    if(isValid) {
+        alert(`Username: ${username}\nEmail: ${email}\nPhone: ${phone}`);
+    }
+
+    return isValid;
+}
