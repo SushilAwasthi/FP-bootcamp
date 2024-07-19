@@ -1,0 +1,128 @@
+*{
+   overflow-x: hidden; 
+}
+html body{
+  margin: 0px;
+  padding: 0px;
+ 
+}
+
+.navbar {
+ background-color:black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  height: 15%; 
+}
+.nav-links{
+  margin-left: auto;
+}
+.nav-links ul{
+  display: -webkit-inline-flex;
+  justify-content:space-between;
+  font-size: larger;
+  list-style-type: none;
+  gap: 10px;
+}
+.nav-links ul a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-right: 10px;
+}
+.nav-links a:hover{
+  background-color:darkblue;
+}
+.container{
+  position: relative;
+  text-align: center;
+  color:black;
+   font-size: large;
+   text-decoration: brown;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer {
+    background-color: gainsboro;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer .footer-content{
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.foot ul li{
+  list-style-type: none;
+}
+footer p {
+    /* margin: 10px; */
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+.card{
+   display: flex;
+   justify-content: space-evenly;
+   list-style: none;
+}
+
+.box{
+  margin: 10px 60px;
+  background-color: rgba(0, 0, 0, 0.249);
+  padding: 10px 4%;
+  border-radius: 20px;
+
+}
+.boxe{
+   margin: 10px 400px;
+  background-color: rgba(0, 0, 0, 0.249);
+  padding: 10px 4%;
+  border-radius: 20px;
+}
+.foot{
+  color: white;
+}
+input[type="text"]{
+  width: 500px;
+  height: 40px;
+}
+input[type="email"]{
+  width: 500px;
+  height: 40px;
+}
+input[type="number"]{
+  width: 500px;
+  height: 40px;
+}
+
+input[type="radio"]{
+  width: 20px;;
+  height: 20px;
+}
+input[type="submit"]{
+  width: 200px;
+  height: 40px;
+  transition: 0.3s;
+}
+input[type="submit"]:hover{
+  background-color:brown;
+  color:white;
+}
+textarea{
+  height: 100px;
+  width: 500px;
+}
