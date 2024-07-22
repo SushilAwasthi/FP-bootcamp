@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/styles/index.css">
+     <script src="script.js"></script>
+
+    <title>registration</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.249);
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar">
+    <img src="/assets/2874070.jpg" width="120" height="100"> 
+    <div class="nav-links">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li> 
+            <li><a href="signup1.html" >Register/Login</a></li> 
+        </ul>
+    </div> 
+   
+    </nav>
+    <header>
+        <h1>Login Form</h1>
+    </header>
+    <form action="" method="POST">
+        <p id="title">Log in</p>
+        <div class="formItem">
+            <label for="usernameoremail">Username or Email:</label>
+            <input type="text" name="username" id="username" required />
+        </div>
+        <div class="formItem">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required />
+        </div>
+        <div class="formItem">
+            <input type="submit" value="Login">
+        </div>
+        <p>New member? <a href="signup1.html">Register here</a></p>
+    </form>
+</body>
+</html>

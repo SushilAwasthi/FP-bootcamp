@@ -1,5 +1,5 @@
 function validate() {
-    // Clear previous error messages
+   
     document.getElementById('username-error').textContent = "";
     document.getElementById('email-error').textContent = "";
     document.getElementById('phone-error').textContent = "";
@@ -28,3 +28,46 @@ function validate() {
 
     return isValid;
 }
+
+function SignupPage(){
+    document.getElementById('username-error').textContent ="";
+    document.getElementById('email-error').textContent ="";
+    document.getElementById('phone-error').textContent="";
+    document.getElementById('password-error').textContent="";
+
+
+    const username=document.getElementById('name');
+    const email=document.getElementById('email');
+    const phone =document.getElementById('phone');
+    const password=document.getElementById('pwd');
+    const cpassword=document.getElementById('pwd');
+
+    let isValid = true;
+    if(username == ""){
+        document.getElementById('username-error').textContent ='username cannot be blank'
+        isValid = false;
+    }
+    if(email == ""){
+        document.getElementById('email-error').textContent='email cannot be blank'
+        isValid =false;
+    }
+    if(phone == ""){
+        document.getElementById('phone-error').textContent='phone cannot be blank'
+        isValid =false;
+    }
+    if(password == ""){
+        document.getElementById('password-error').textContent='password cannot be blank'
+        isValid =false;
+    }
+     if(cpassword == ""){
+        document.getElementById('cpassword-error').textContent='re-enter password'
+        isValid =false;
+    }
+   
+}
+function Loginpage(){
+    const user =document.getElementById('name');
+    const password=document.getElementById('pwd');
+}
+
+

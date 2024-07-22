@@ -3,41 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website</title>
-    
-      <link rel="stylesheet" href="index.css">
-    <script src="script.js"></script>
-
+    <title>Website</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
-    <img src="C:\Users\acer\Desktop\website\vecteezy_cool-monkey-logo-design-vector-illustrator_6627369.jpg" width="120" height="80"> 
-    <div class="nav-links">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li> 
-            <select name="services" id="services">
-             <option><b>Services</b></option> 
-                <option>Web Development</option>
-                <option>Software Development</option>
-                <option>Anroid Development</option>
-            </select>
-        </ul>
-    </div> 
-   
+        <img src="/assets/2874070.jpg" width="120" height="100" alt="Logo"> 
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <li><a href="signup1.html">Register/Login</a></li> 
+            </ul>
+        </div> 
     </nav>
     <header>
         <div class="container">
-        <img src="C:\Users\acer\Desktop\website\pexels-pixabay-461073.jpg" height="800px" width="100%">
-        <div class="centered">
-        <h1>Welcome to my website</h1>
+            <img src="/assets/" alt="" width="100%" height="10%">
         </div>
-        </div>
-        </header>
+    </header>
         <h1 style="text-align: center;">OUR SERVICES</h1>
         <div class="card">
-            
             <div class="box">
                 <h3>Web Development</h3>
                 <p>A web development company specializes in designing, developing, and maintaining websites 
@@ -61,43 +49,42 @@
         </div>
         <h1 style="text-align: center;">Contact Us</h1>
         <div class="boxe">
-        <form id="form" onsubmit="return validate()" method="POST">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username">
-    <span id="username-error" style="color: red;"></span><br><br>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-    <span id="email-error" style="color: red;"></span><br><br>
-    
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" name="phone">
-    <span id="phone-error" style="color: red;"></span><br><br>
-    
-    <input type="submit" value="Submit">
-</form>
-</div>
-    <footer style="background-color: black;">
-        <div class="footer-content">
-            <div class="foot"> 
-            <h4>Contact us</h4>
-            <ul >
-                <li>facebook</li>
-                 <li>whatsapp</li>
-                  <li>Instagram</li>
-            </ul>
+            <form id="form" onsubmit="return validate()" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <span id="username-error" style="color: red;"></span><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="email-error" style="color: red;"></span><br><br>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+                <span id="phone-error" style="color: red;"></span><br><br>
+                
+                <input type="submit" value="Submit" class="btn">
+            </form>
         </div>
-         <div class="foot"> 
-            <h4>Services</h4>
-            <ul >
+    <footer>
+        <div class="f-cont">
+            <p>Contact Us</p>
+        
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Whatsapp</li>
+            
+        </div>
+        <div class="write">
+            <h2>&copy; sushilawasthi</h2>
+        </div>
+        <div class="serv" style="margin-right: 2%;" >
+            <p>Services</p>
+            
                 <li>Web Development</li>
-                 <li>Mobile Development</li>
-                  <li>IT Support</li>
-            </ul>
+                <li>Mobile Development</li>
+                <li>IT Services</li>
+        
         </div>
-        </div>
-        <p>&copy;  SushilAwasthi</p>
     </footer>
-    
 </body>
 </html>
