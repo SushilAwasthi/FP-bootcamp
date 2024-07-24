@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         console.log(formDataObj);
 
-        fetch("https://reqres.in/api/login", {
+        fetch("https://reqres.in/api/users/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', function () {
             })
             .then(data => {
                 console.log(data);
-                sessionStorage.setItem('token', data.token)
+                sessionStorage.setItem('user', JSON.stringify(data));
                 });
 
                 alert('Login successful!');

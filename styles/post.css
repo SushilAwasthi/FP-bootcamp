@@ -1,0 +1,111 @@
+*{
+  overflow-x: hidden;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+ background-color: #00008B;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  height: 15%;
+  z-index: 10;
+}
+.nav-links {
+  margin-left: auto;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  list-style-type: none;
+  gap: 10px;
+}
+.nav-links ul a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-right: 10px;
+}
+.nav-links a:hover {
+  background-color: darkblue;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: large;
+  text-decoration: brown;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  background-color: #00008B;
+  padding-left: 20px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  color: white;
+  bottom: 0;
+}
+
+.f-cont {
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.write {
+  margin: auto;
+  margin-top: 4%;
+}
+
+.serve {
+  margin-right: 2%;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 40%;
+}
+.box {
+  display: flex;
+  margin: 10px 60px;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  padding: 10px 4%;
+  border-radius: 20px;
+}
+#image{
+  overflow: hidden;
+  margin: 0;
+  height: 250px;
+  width: 1000px
+}
+.services{
+  text-align: right;
+  margin-top: 0;
+  padding: 0;
+}

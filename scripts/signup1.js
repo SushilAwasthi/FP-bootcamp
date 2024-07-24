@@ -22,9 +22,10 @@ window.addEventListener('DOMContentLoaded', function () {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                   sessionStorage.setItem('user', JSON.stringify(data));
+                  sessionStorage.setItem('user', JSON.stringify(data));
+                   
                    alert("Registration successfull");
-                    window.location.href = '/app/login.html';
+                    window.location.href = '/index.html';
             })
             .catch(err => {
                 console.log(err);
