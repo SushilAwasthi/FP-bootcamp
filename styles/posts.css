@@ -61,11 +61,12 @@ footer {
   background-color: #00008B;
   padding-left: 20px;
   bottom: 0;
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 120px;
   display: flex;
   color: white;
+  bottom: 0;
 }
 
 .f-cont {
@@ -82,7 +83,14 @@ footer {
 .serve {
   margin-right: 2%;
 }
-.card {
+.list-container{
+  display: flex;
+  /* margin-left: 30%;  */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -104,8 +112,8 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden; 
-}
-.image {
+} */
+/* .image {
   flex: 1 0 50%;
   overflow: hidden; 
 }
@@ -131,4 +139,4 @@ footer {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-}
+} */

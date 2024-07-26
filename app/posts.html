@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>posts</title>
-    <link rel="stylesheet" href="/styles/posts.css">
-    <script type="text/javascript" src="../scripts/script.js" defer></script>
-     <script type="text/javascript" src="../scripts/posts.js" defer></script>
-     <script type="text/javascript" src="../scripts/post.js" defer></script>
+    <link rel="stylesheet" href="/styles/posts.css">  
 </head>
 <body>
     <nav class="navbar">
@@ -26,72 +23,15 @@
         </div> 
     </nav>
     <h1></h1>
-    <div class="card">
-        <div class="box" onclick="redirectToPost(1)">
-            <div class="image" id="image">
-                    <img src="/assets/4421964.jpg">
-            </div>
-            <div class="services">
-                <h3>Web Development</h3>
-                <p>A web development company specializes in designing, developing, and maintaining websites 
-                    and web applications. Their services typically include front-end, back-end, and full-stack 
-                    development; web design; website optimization; 
-                    security; and upgrades and technical support....<a href="post.html">more details</a></p>
-                </div>
-            </div>
-            <div class="box" id="box" onclick="redirectToPost(2)">
-                <div class="image"  id="image">
-                    <img src="/assets/4421964.jpg">
-                </div>
-                <div class="services">
-                <h3>Software Development</h3>
-                <p>A web development company specializes in designing, developing, and maintaining websites 
-                    and web applications. Their services typically include front-end, back-end, and full-stack 
-                    development; web design; website optimization; 
-                    security; and upgrades and technical support...<a href="post.html">more details</a></p>
-            </div>
-            </div>
-            <div class="box" onclick="redirectToPost(3)">
-                <div class="image"  id="image">
-                    <img src="/assets/4421964.jpg">
-                </div>
-                <div class="services">
-                <h3>Mobile Development</h3>
-                <p>A web development company specializes in designing, developing, and maintaining websites 
-                    and web applications. Their services typically include front-end, back-end, and full-stack 
-                    development; web design; website optimization; 
-                    security; and upgrades and technical support...<a href="post.html">more details</a></p>
-            </div>
-        </div>
-            <div class="box" onclick="redirectToPost(4)">
-                <div class="image"  id="image">
-                    <img src="/assets/person-front-computer-working-html.jpg">
-                </div>
-                <div class="services">
-                <h3>Artificial Inteligence</h3>
-                <p>A web development company specializes in designing, developing, and maintaining websites 
-                    and web applications. Their services typically include front-end, back-end, and full-stack 
-                    development; web design; website optimization; 
-                    security; and upgrades and technical support....<a href="post.html">more details</a></p>
-            </div>
-        </div>
-            <div class="box" onclick="redirectToPost(5)">
-                <div class="image"  id="image">
-                    <img src="/assets/4421964.jpg">
-                </div>
-                <div class="services">
-                <h3>Robotics</h3>
-                <p>A web development company specializes in designing, developing, and maintaining websites 
-                    and web applications. Their services typically include front-end, back-end, and full-stack 
-                    development; web design; website optimization; 
-                    security; and upgrades and technical support....<a href="post.html">more details</a></p>
-            </div>
-        </div>
-    </div>
-    <div id="details" style="display: none;">
-        <h2>Details</h2>
+    <!-- <div class="card"> -->
+        <!-- <div class="box"> -->
+           <ul class="list-container">
+           </ul>
+        <!-- </div>            -->
+    <!-- <div id="Details"> >
         <p id="details-content"></p>
-    </div>
+    </div> -->
+    <!-- </div> -->
      <footer>
         <div class="f-cont">
             <p>Contact Us</p>
@@ -112,5 +52,7 @@
                 <li>IT Services</li>     
         </div>
     </footer>
+    <script type="text/javascript" src="../scripts/script.js"></script>
+     <script type="module" src="../scripts/posts.js"></script>
 </body>
 </html>

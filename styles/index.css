@@ -1,5 +1,6 @@
 *{
   overflow-x: hidden;
+  margin: 0 ;
 }
 html body {
   margin: 0;
@@ -9,11 +10,19 @@ html body {
 ::-webkit-scrollbar {
     display: none;
 }
-
-.navbar {
+.icon{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+  .navbar {
  background-color: #00008B;
   list-style-type: none;
-  margin: 0;
+  margin: 0;  
   padding: 0;
   position: sticky;
   width: 100%;
@@ -45,7 +54,6 @@ html body {
 .nav-links a:hover {
   background-color: darkblue;
 }
-
 .container {
   position: relative;
   text-align: center;
@@ -73,17 +81,18 @@ footer {
 }
 
 .f-cont {
-  margin-top: 0;
+  margin-top: 20px;
   padding: 0;
   box-sizing: border-box;
 }
 
 .write {
   margin: auto;
-  margin-top: 4%;
+  margin-top: 8%;
 }
 
-.serve {
+.serv {
+  margin-top: 20px;
   margin-right: 2%;
 }
 .card {
@@ -153,3 +162,106 @@ textarea {
 .register{
   border: #00008B solid;
 }
+
+
+@media screen and (max-width: 600px)
+{ 
+  .icon{
+    display: block;
+  }
+.navbar {
+  background-color: #00008B;
+  list-style-type: none;
+  margin: 0;  
+  padding: 0;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  height: 70px;
+  z-index: 10;
+}
+
+.nav-links {
+  margin-left: auto;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  list-style-type: none;
+  gap: 1px;
+  margin-top: 30px;
+  transition: all .5s;
+}
+.nav-links ul a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.nav-links a:hover {
+  background-color: darkblue;
+}
+#topic{
+  font-size: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 400px;
+  align-items: center;
+  margin: 0 auto;
+}
+.box {
+  margin: 10px 20px;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  padding: 10px 10px;
+  border-radius: 20px;
+  width: 400px;
+  height: 150px;
+}
+.boxe {
+  margin: 10px auto;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  padding: 10px 10px;
+  border-radius: 20px;
+  width: 40%;
+}
+footer {
+  background-color: #00008B;
+  padding-left: 20px;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  color: white;
+}
+.f-cont {
+  margin-top: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+.write {
+  margin: auto;
+  margin-top: 50px;
+  bottom: 0;
+  font-size: 10px;
+}
+.serv {
+  margin-top: 20px;
+  margin-right: 5%;
+  font-size: 10px;
+}
+}
+
