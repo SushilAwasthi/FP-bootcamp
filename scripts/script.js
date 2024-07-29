@@ -41,6 +41,15 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+//dropdown menu
+const togglebtn = document.querySelector(".toggle_btn");
+const togglebtnIcon = document.querySelector(".toggle_btn i");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+togglebtn.onclick = function () {
+  dropdownMenu.classList.toggle("open");
+};
+
 window.addEventListener("DOMContentLoaded", function () {
   const user = sessionStorage.getItem("user");
   console.log(user);

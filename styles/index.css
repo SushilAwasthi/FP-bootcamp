@@ -10,15 +10,7 @@ html body {
 ::-webkit-scrollbar {
     display: none;
 }
-.icon{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
+
   .navbar {
  background-color: #00008B;
   list-style-type: none;
@@ -33,6 +25,7 @@ html body {
 
 .nav-links {
   margin-left: auto;
+  margin-top: 30px;
 }
 
 .nav-links ul {
@@ -53,6 +46,40 @@ html body {
 
 .nav-links a:hover {
   background-color: darkblue;
+}
+
+.nav-links .toggle_btn{
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.dropdown-menu{
+  display: none;
+  cursor: pointer;
+  color: red;
+  position: absolute;
+  right: 1rem;
+  top: 20px;
+  height: 0;
+  width: 300px;
+  background: lightblue;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s , cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open{
+  height: 240px;
+}
+.dropdown-menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-menu .action_btn{
+  width: 100%;
 }
 .container {
   position: relative;
@@ -162,11 +189,100 @@ textarea {
 .register{
   border: #00008B solid;
 }
+@media screen and (max-width: 920px)
+{ 
+.nav-links {
+  cursor: pointer;
+  margin-left: auto;
+  display: block;
+}
+ .nav-links ul {
+  cursor: pointer;
+  display: none;
+  justify-content: space-between;
+  font-size: 15px;
+  color: red;
+  list-style-type: none;
+  gap: 1px;
+  margin-top: 30px;
+  transition: all .5s;
+} 
+.nav-links .toggle_btn{
+  display: block;
+  cursor: pointer;
+}
+.dropdown-menu{
+  display: block;
+  cursor: pointer;
+}
+
+#topic{
+  font-size: 20px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 400px;
+  align-items: center;
+  margin: 0 auto;
+}
+.box {
+  margin: 10px 20px;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  padding: 10px 10px;
+  border-radius: 20px;
+  width: 400px;
+  height: 150px;
+}
+.boxe {
+  margin: 10px auto;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  padding: 10px 10px;
+  border-radius: 20px;
+  width: 40%;
+}
+footer {
+  background-color: #00008B;
+  padding-left: 20px;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  color: white;
+}
+.f-cont {
+  margin-top: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+.write {
+  margin: auto;
+  margin-top: 50px;
+  bottom: 0;
+  font-size: 10px;
+}
+.serv {
+  margin-top: 20px;
+  margin-right: 5%;
+  font-size: 10px;
+}
+}
+
+
+
+
 
 
 @media screen and (max-width: 600px)
 { 
-  .icon{
+  .nav-links .toggle_btn{
     display: block;
   }
 .navbar {
@@ -186,7 +302,7 @@ textarea {
 }
 
 .nav-links ul {
-  display: flex;
+  display: none;
   justify-content: space-between;
   font-size: 15px;
   list-style-type: none;
@@ -205,10 +321,12 @@ textarea {
 .nav-links a:hover {
   background-color: darkblue;
 }
+.dropdown-menu{
+  display: block;
+}
 #topic{
   font-size: 20px;
 }
-
 .card {
   display: flex;
   flex-wrap: wrap;

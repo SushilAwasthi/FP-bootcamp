@@ -22,16 +22,27 @@
     </div> 
    
     </nav>
+     <div class="dropdown-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li> 
+        <li><a href="/app/signup1.html" class="signup-link" >SignUp</a></li> 
+        <li><a href="/app/login.html" class="login-link" >Login</a></li> 
+        <li class="posts-Link" style="display :none"><a href="/app/posts.html" id="Posts" >Posts</a></li> 
+        <li class="logout-link" style="display: none;"><a href="#" id="logout">Logout</a></li>    
+         </div> 
     <div class="login">
-    <form action="" id="form">
+    <form action="" id="form"  onsubmit="return validate()">
         <p id="title">Log in</p>
         <div class="formItem">
             <label for="usernameoremail">Username or Email:</label>
-            <input type="text" name="username" id="username" required />
+            <input type="text" name="email" id="username" required />
+             <span id="username-error" style="color: red;"></span><br><br>
         </div>
         <div class="formItem">
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" required />
+             <span id="password-error" style="color: red;"></span><br><br>
         </div>
         <div class="formItem">
            <p><input type="button" id="submit" value="Login"></p>
@@ -61,7 +72,7 @@
         </div>
     </footer>
      <script type="module" src="../scripts/login.js"></script>
-    <script type="stylesheet" href="../scripts/script.js"></script>
+    <script type="text/javascript" href="../scripts/script.js"></script>
 </body>
 </html>
 
